@@ -127,7 +127,8 @@ Write-Host "`n"
 
 
 # List the folders in $FolderD
-$modsFoldersList = Get-ChildItem -Path $FolderD -Directory | Select-Object -ExpandProperty Name
+# BUG with only 1 folder in $FolderD FIXED!! -- Force the creation of the array
+$modsFoldersList = @(Get-ChildItem -Path $FolderD -Directory | Select-Object -ExpandProperty Name)
 
 # take text from logfile
 $settingsinlog = Get-Content -Path "$logFile"
@@ -239,7 +240,8 @@ if (Test-Path $RevertlogFile) {
 do {
 
 	# List the folders in $FolderD
-	$modsFoldersList = Get-ChildItem -Path $FolderD -Directory | Select-Object -ExpandProperty Name
+	# BUG with only 1 folder in $FolderD FIXED!! -- Force the creation of the array
+	$modsFoldersList = @(Get-ChildItem -Path $FolderD -Directory | Select-Object -ExpandProperty Name)
 
 	$modsFoldersAbsoluteList = Get-ChildItem -Path $FolderD -Directory | Select-Object -ExpandProperty FullName
 
