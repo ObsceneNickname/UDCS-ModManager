@@ -49,6 +49,7 @@ Available hard disk space &
 Data written for Deploy & Revert of Taz's "DCS Optimized Textures" mod:
 
 * ***Other popular Mod Managers***:
+
 available space:
 
 before ENABLE - - - - intra-operation ENABLE - - - - end of ENABLE
@@ -64,6 +65,7 @@ before ENABLE - - - - intra-operation ENABLE - - - - end of ENABLE
 The other Mod Managers write at least **46 GB** of data. Most likely they write even more than that. This is a rough downward estimate. And we are not even considering here the disk write of when we disable the mod.
 
 * ***UDCS-ModManager***:
+
 available space:
 
 before ENABLE - - - - intra-operation ENABLE - - - - end of ENABLE
