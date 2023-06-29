@@ -6,7 +6,7 @@
 
 ## Overview
 
-UDCS-MM is a generic mod manager ( but written with DCS in mind and heart ) that consists of a single 16 KB PowerShell file developed by a single DCS fan in less than a week. It is currently the most powerful, fast, lightweight, and hardware-friendly solution to mod management .
+UDCS-MM is a generic mod manager ( but written with DCS in mind and heart ) that consists of a single 16 KB PowerShell file developed by a decades-long DCS fan moved by frustration at the lack of similar solutions. It is currently the most powerful, fast, lightweight, and hardware-friendly solution to mod management. Oh, and it is also the most aesthetically pleasing ( see "Ugliness" section ).
 
 Why you should care: because UDCS-MM uses a completely different approach from other mod-managers. UDCS does not rewrite data. It does not corrupt files by copying and pasting them schizophrenically one on top of the other but instead uses symlinks by intervening on a very small part of the data concerning the indexing of directories and files to manage mods thus respecting the health and longevity of your hard drives and respecting your time as well.
 
@@ -22,11 +22,11 @@ How complicated could it possibly be to operate this script by people who know h
 
 Without going into details, I'll summarize the benefits like this: the fact is that UDCS is fast. **Incredibly fast**. If you want you can stop here, take my word for it and avoid continuing to read boring explanations and ravings.
 
-Yes but how fast? Well, if we take any of the other mod managers out there, and assume that this is an old Smart car launched at the frightening speed of 90 kilometers per hour on a bumpy road with shaking windows, UDCS-MM is an AIM-54C Phoenix at 25,000 meters traveling at Mach 5 toward a poor, unsuspecting MIG. And let's be clear, I'm not even kidding with the numbers. In fact, this numerical relationship is definitely downward for UDCS-MM.
+Yes but how fast? Well, if we take any of the other mod managers out there, and assume that this is an old Smart car launched at the frightening speed of 90 kilometers per hour on a bumpy road with shaking windows, UDCS-MM is an AIM-54C Phoenix at 25000 meters traveling at Mach 5 toward a poor, unsuspecting MIG. And let's be clear, I'm not even kidding with the numbers. In fact, this numerical relationship is definitely downward for UDCS-MM.
 
-This is the time it took to activate and then deactivate Taz's fantastic "DCS Optimized Textures" mod used as a template as it was nice and full-bodied. It occupies about twenty GB and acts on about forty GB of vanilla files.
+This is the time it took to activate and then deactivate Taz's fantastic "DCS Optimized Textures" mod used as a template as it is very nice and full-bodied. It occupies about twenty GB and acts on about forty GB of vanilla files.
 
-DCS Optimized Textures Link: https://forum.dcs.world/topic/323252-dcs-optimized-textures/
+DCS Optimized Textures by Taz link: https://forum.dcs.world/topic/323252-dcs-optimized-textures/
 
 Time taken to Deploy and Revert Taz's "DCS Optimized Textures" mod:
 
@@ -116,6 +116,24 @@ Possibly directly in the root of the hard drive. This is not mandatory but **the
 So  *D:\UDCS-ModManager\\*  is fine. Also *D:\Games\UDCS-ModManager\\*.
 
 If the folder is, let's say, *D:\DCS World\UDCS-ModManager\\* the script **will not work**.
+
+The folder that houses your mods must be structured as usual as with other mod managers. It must contain folders with the name of the mod and inside the same structure as the Main Game directories. Example:
+
+*D:\DCS World\\_MODS\\*\
+├───BARTHEK's CAUCASUS REDONE 2022 - REV 2\
+│&nbsp;&nbsp;&nbsp;├───Bazar\
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└───Textures\
+│&nbsp;&nbsp;&nbsp;└───Mods\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───terrains\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───Caucasus\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├───shadingOptions\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───vfstextures\
+├───BARTHEK's CAUCASUS REDONE 2022 - SNOWLESS WINTER REV 2\
+│&nbsp;&nbsp;&nbsp;└───Mods\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───terrains\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───Caucasus\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├───shadingOptions\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───vfstextures\
 
 
 ### Limitations ###
