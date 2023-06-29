@@ -2,15 +2,27 @@
 # UDCS-ModManager
 **Ugly Dashing Cunning Symlink Mod Manager**
 
+![alt text](https://github.com/ObsceneNickname/UDCS-ModManager/blob/main/Logo_UDCS-ModManager.png)
+
 ## Overview
 
 UDCS-MM is a generic mod manager ( but written with DCS in mind and heart ) that consists of a single 16 KB PowerShell file developed by a single DCS fan in less than a week. It is currently the most powerful, fast, lightweight, and hardware-friendly solution to mod management .
 
 Why you should care: because UDCS-MM uses a completely different approach from other mod-managers. UDCS does not rewrite data. It does not corrupt files by copying and pasting them schizophrenically one on top of the other but instead uses symlinks by intervening on a very small part of the data concerning the indexing of directories and files to manage mods thus respecting the health and longevity of your hard drives and respecting your time as well.
 
+### Ugliness
+
+UDCS-ModManager has a retro interface; commands are given from the terminal. Nothing can beat the thrill of typing Y or pressing enter on a horrible blue background and white text! The User Experience is simply stellar and will make each user really feel in charge. It's pretty much the same difference in feeling as flying in a powerful, flawed and potentially self-destructive F-14 and flying in a modern, clean and deadly slow F-18 looking at its displays with its satellite coordinates... Ehy, I'm kidding, they're both great planes.
+
+### Simplicity
+
+How complicated could it possibly be to operate this script by people who know how to successfully operate a modern war jet?
+
 ### Time
 
-Without going into details, I'll summarize the benefits like this: the fact is that UDCS is fast. Incredibly fast. Yes but how fast? Well, if we take any of the other mod managers out there, and assume that this is an old Smart car launched at the frightening speed of 90 kilometers per hour on a bumpy road with shaking windows, UDCS-MM is an AIM-54C Phoenix at 25,000 meters traveling at Mach 5 toward a poor, unsuspecting MIG. And let's be clear, I'm not even kidding with the numbers. In fact, this numerical relationship is definitely downward for UDCS-MM.
+Without going into details, I'll summarize the benefits like this: the fact is that UDCS is fast. **Incredibly fast**. If you want you can stop here, take my word for it and avoid continuing to read boring explanations and ravings.
+
+Yes but how fast? Well, if we take any of the other mod managers out there, and assume that this is an old Smart car launched at the frightening speed of 90 kilometers per hour on a bumpy road with shaking windows, UDCS-MM is an AIM-54C Phoenix at 25,000 meters traveling at Mach 5 toward a poor, unsuspecting MIG. And let's be clear, I'm not even kidding with the numbers. In fact, this numerical relationship is definitely downward for UDCS-MM.
 
 This is the time it took to activate and then deactivate Taz's fantastic "DCS Optimized Textures" mod used as a template as it was nice and full-bodied. It occupies about twenty GB and acts on about forty GB of vanilla files.
 
@@ -64,7 +76,7 @@ before ENABLE - - - - intra-operation ENABLE - - - - end of ENABLE
 
 0 GB - - - - - - - - - - 0 GB - - - - - - - - - - 0.000811 GB
 
-The same operation conducted by UDCS-ModManager writes to disk the ridiculous amount of  **0.000811 GB** practically less than a single megabyte. 
+The same operation conducted by UDCS-ModManager writes to disk the ridiculous amount of  **0.000811 GB** practically less than a single megabyte.
 
 ## INSTALL AND HOW TO USE
 
@@ -112,4 +124,4 @@ README is WIP
 
 ## Thanks ##
 
-This script was developed for personal needs but it is a pleasure to be able to share it with the community in the hope that you will enjoy it.
+This script was developed for personal needs but it is a pleasure to be able to share it with the community, from which I have taken and learned so much, in the hope that you will enjoy it and find it useful.
